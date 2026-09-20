@@ -74,7 +74,7 @@ CREATE TABLE security_reports (
 INSERT INTO admins (username, password_hash, role, created_at, is_active)
 VALUES (
     'admin_main',
-    '$2y$12$rcEwv10xV9VavH2I2il/S.ZEIWHYLQeOiKxecnV4A65yUMNiskC1i',
+    '$2y$12$HG6o5arke1qYmIuZ0AFEyOcc6gB7ZM/ix2H7FB1DQVWgf8bK6tOra',
     'SuperAdmin',
     '2025-01-10 09:00:00',
     1
