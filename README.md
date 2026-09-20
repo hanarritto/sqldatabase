@@ -1,6 +1,6 @@
 # Dorm Access & Student Database System
 
-A database-first web project for a university dormitory access system.
+A database-first university dormitory access system built with PHP, MySQL/MariaDB, Bootstrap 5.3, and PDO.
 
 ## Main modules
 - Dashboard
@@ -10,29 +10,12 @@ A database-first web project for a university dormitory access system.
 - Security Reports
 - Admins
 
-## Technology
-- PHP 8+
-- MySQL 8+ / MariaDB
-- Bootstrap 5.3
-- HTML / CSS / JavaScript
-- PDO with prepared statements
+## Run the real web app
+1. Install XAMPP.
+2. Start **Apache** and **MySQL**.
+3. Copy/clone this repository into `C:\xampp\htdocs\dorm-access-system`.
+4. Open phpMyAdmin and import `sql/database.sql`.
+5. Open **http://localhost/dorm-access-system/**.
+6. Login with **admin_main / admin123**.
 
-## Database
-The SQL schema is in `sql/database.sql`.
-
-## Local setup
-1. Install XAMPP (or another PHP + MySQL environment).
-2. Copy this project into `htdocs`.
-3. Create a database named `dorm_access`.
-4. Import `sql/database.sql` in phpMyAdmin.
-5. Open:
-   `http://localhost/dorm-access-system/public/`
-
-Default demo admin:
-- Username: `admin_main`
-- Password: `admin123`
-
-> Change the demo password before real deployment.
-
-## Important
-GitHub Pages can host the source/static files, but it cannot execute PHP or connect directly to MySQL. To run the complete database-connected system, use XAMPP, a PHP hosting server, or another server that supports PHP + MySQL.
+The pages use PHP PDO prepared statements and write/read records from MySQL. GitHub is used for source-code storage; GitHub Pages cannot execute this PHP/MySQL application.
